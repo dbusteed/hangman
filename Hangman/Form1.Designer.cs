@@ -64,9 +64,10 @@
             this.radCountries = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radEasy = new System.Windows.Forms.RadioButton();
-            this.radMedium = new System.Windows.Forms.RadioButton();
             this.radHard = new System.Windows.Forms.RadioButton();
+            this.radMedium = new System.Windows.Forms.RadioButton();
+            this.radEasy = new System.Windows.Forms.RadioButton();
+            this.btnShowAnswer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -445,7 +446,7 @@
             this.groupBox1.Controls.Add(this.radCountries);
             this.groupBox1.Location = new System.Drawing.Point(343, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(130, 151);
+            this.groupBox1.Size = new System.Drawing.Size(138, 151);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Category";
@@ -462,17 +463,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Difficulty";
             // 
-            // radEasy
+            // radHard
             // 
-            this.radEasy.AutoSize = true;
-            this.radEasy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radEasy.Location = new System.Drawing.Point(6, 24);
-            this.radEasy.Name = "radEasy";
-            this.radEasy.Size = new System.Drawing.Size(67, 24);
-            this.radEasy.TabIndex = 0;
-            this.radEasy.TabStop = true;
-            this.radEasy.Text = "Easy";
-            this.radEasy.UseVisualStyleBackColor = true;
+            this.radHard.AutoSize = true;
+            this.radHard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radHard.Location = new System.Drawing.Point(6, 84);
+            this.radHard.Name = "radHard";
+            this.radHard.Size = new System.Drawing.Size(67, 24);
+            this.radHard.TabIndex = 2;
+            this.radHard.TabStop = true;
+            this.radHard.Text = "Hard";
+            this.radHard.UseVisualStyleBackColor = true;
             // 
             // radMedium
             // 
@@ -486,23 +487,36 @@
             this.radMedium.Text = "Medium";
             this.radMedium.UseVisualStyleBackColor = true;
             // 
-            // radHard
+            // radEasy
             // 
-            this.radHard.AutoSize = true;
-            this.radHard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radHard.Location = new System.Drawing.Point(6, 84);
-            this.radHard.Name = "radHard";
-            this.radHard.Size = new System.Drawing.Size(67, 24);
-            this.radHard.TabIndex = 2;
-            this.radHard.TabStop = true;
-            this.radHard.Text = "Hard";
-            this.radHard.UseVisualStyleBackColor = true;
+            this.radEasy.AutoSize = true;
+            this.radEasy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radEasy.Location = new System.Drawing.Point(6, 24);
+            this.radEasy.Name = "radEasy";
+            this.radEasy.Size = new System.Drawing.Size(67, 24);
+            this.radEasy.TabIndex = 0;
+            this.radEasy.TabStop = true;
+            this.radEasy.Text = "Easy";
+            this.radEasy.UseVisualStyleBackColor = true;
+            // 
+            // btnShowAnswer
+            // 
+            this.btnShowAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowAnswer.Location = new System.Drawing.Point(53, 408);
+            this.btnShowAnswer.Name = "btnShowAnswer";
+            this.btnShowAnswer.Size = new System.Drawing.Size(203, 44);
+            this.btnShowAnswer.TabIndex = 36;
+            this.btnShowAnswer.Text = "Show answer";
+            this.btnShowAnswer.UseVisualStyleBackColor = true;
+            this.btnShowAnswer.Click += new System.EventHandler(this.btnShowAnswer_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(656, 550);
+            this.Controls.Add(this.btnShowAnswer);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnX);
@@ -586,6 +600,7 @@
         private System.Windows.Forms.RadioButton radHard;
         private System.Windows.Forms.RadioButton radMedium;
         private System.Windows.Forms.RadioButton radEasy;
+        private System.Windows.Forms.Button btnShowAnswer;
     }
 }
 
